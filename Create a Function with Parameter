@@ -1,0 +1,4 @@
+def demo(name,age):
+    name = "raman"
+    age = 19
+    return age , name
