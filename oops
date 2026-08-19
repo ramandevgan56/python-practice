@@ -1,0 +1,11 @@
+def outer_func(a, b):
+    # Inner function
+    def addition(a, b):
+        return a + b
+
+    # Call inner function and add 5 to the result
+    add = addition(a, b)
+    return add + 5
+
+result = outer_func(5, 10)
+print(result)
