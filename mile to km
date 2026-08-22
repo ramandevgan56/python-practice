@@ -1,0 +1,3 @@
+x = float(input("enter you number:"))
+km = (0.6)*x
+print(km)
