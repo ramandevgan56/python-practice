@@ -1,0 +1,17 @@
+#program to check armstrong number 
+#armstrong number = eg 153 = 1*1*1 + 5*5*5 + 3*3*3
+#temp variable bana pdhega to save a number
+
+num = int(input("enter a number:"))
+sum = 0
+temp = num
+while temp > 0:
+  digit = temp%10
+  cube = digit**3
+  sum = cube + sum
+  temp //= 10
+
+  if sum == num:
+    print("it is a arm strong number")
+  else:
+    print("not a armstrong number")
