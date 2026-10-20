@@ -1,0 +1,16 @@
+import numpy as np
+
+# 1. Create a 1D array from a list
+arr_1d = np.array([1, 2, 3, 4, 5])
+print("1D Array:", arr_1d)
+
+# 2. Create a 2D array (Matrix)
+arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("2D Array:\n", arr_2d)
+
+# 3. Quick generation placeholders
+zeros = np.zeros((2, 3))       # Creates a 2x3 grid filled with 0.0
+ones = np.ones((3, 2))         # Creates a 3x2 grid filled with 1.0
+sequence = np.arange(0, 10, 2) # Start at 0, stop before 10, step by 2 -> [0, 2, 4, 6, 8]
+
+print("Sequence:", sequence)
