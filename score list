@@ -1,0 +1,12 @@
+def softmax(x):
+    x = np.asarray(x, dtype=float)
+    shifted = x - np.max(x)
+    exp_x = np.exp(shifted)
+    return exp_x / np.sum(exp_x)
+
+scores = np.array([2.0, 1.0, 0.1])
+
+probabilities = softmax(scores)
+
+print(probabilities)
+print(probabilities.sum())
